@@ -57,8 +57,8 @@
         img {
             border-radius: 50px;
             object-fit: cover;
-            height: 600px;
-            width: 600px;
+            max-width: 100%;
+            height: auto;
             /* margin: 20px; */
         }
 
@@ -110,6 +110,36 @@
             height: 100%;
             width: 100%;
             border-radius: 0px;
+        }
+
+        @media (max-width: 768px) {
+
+            .upper,
+            .lower {
+                flex-direction: column;
+                gap: 30px;
+                margin: 10px;
+                text-align: center;
+            }
+
+            .upper-sub-1,
+            .lower-2 {
+                margin: 10px;
+                padding: 10px;
+            }
+
+            .GC {
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            button {
+                padding: 10px 20px;
+            }
+
+            .bg-bt {
+                display: none;
+            }
         }
     </style>
 </head>
